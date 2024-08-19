@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* ============== */
+
+:root {
+  --text-primary: #2d1c0a;
+}
+
+body {
+  background-color: #fffaef;
+  min-height: 100vh;
+  font-family: 'Lexend', Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+}
+
+.header {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.header__icon {
+  font-size: 5rem;
+}
+
+.header__title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.header__description {
+  color: #2a2a2a;
+  margin-bottom: 24px;
+}
+
+.header__cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.cta-btn {
+  color: var(--text-primary);
+  width: 150px !important;
+
+  transition: transform ease 0.3s;
+}
+
+.how-to-use-section {
+  max-width: 1024px;
+  margin: 4rem auto 4rem auto;
+}
+
+.how-to-use-section__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffdea7;
+  padding: 16px 24px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Lexend', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+
+  box-shadow:
+    0px 0px 3.8px -5px rgba(0, 0, 0, 0.074),
+    4px 5px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.btn:active,
+.btn:focus {
+  outline: 4px solid #f3ad61;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(1px);
+  scale: 0.99;
+}
